@@ -4,73 +4,98 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Deister-Schweizer BF – E-Sport Verein NRW</title>
+
   <style>
+    :root {
+      --rot: #b71c1c;
+      --rot-dunkel: #8e0000;
+      --hell: #f5f5f5;
+      --weiß: #ffffff;
+      --dunkel: #222;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #222;
+      background: var(--hell);
+      color: var(--dunkel);
     }
+
     header {
-      background: #b71c1c;
-      color: white;
+      background: var(--rot);
+      color: var(--weiß);
       padding: 20px;
       text-align: center;
     }
+
     header img {
-      max-width: 150px;
+      width: 150px;
+      height: auto;
+      border-radius: 10px;
       display: block;
       margin: 0 auto 10px;
     }
+
     nav {
       background: #333;
+      padding: 10px;
       display: flex;
       justify-content: center;
       gap: 20px;
-      padding: 10px;
+      flex-wrap: wrap;
     }
+
     nav a {
-      color: white;
+      color: var(--weiß);
       text-decoration: none;
       font-weight: bold;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     section {
-      max-width: 1000px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 8px;
+      background: var(--weiß);
+      padding: 25px;
+      max-width: 1100px;
+      margin: 25px auto;
+      border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
+
     h2 {
-      color: #b71c1c;
+      color: var(--rot);
       margin-top: 0;
     }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
+
     .button {
       display: inline-block;
-      background: #b71c1c;
-      color: white;
+      background: var(--rot);
+      color: var(--weiß);
       padding: 10px 18px;
       border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
     }
+
     .button:hover {
-      background: #8e0000;
+      background: var(--rot-dunkel);
+    }
+
+    footer {
+      background: #333;
+      color: var(--weiß);
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
+
 <body>
+
   <header>
     <img src="logo.png" alt="Vereinslogo" />
     <h1>Deister-Schweizer BF</h1>
@@ -88,30 +113,28 @@
 
   <section id="start">
     <h2>Willkommen beim Deister-Schweizer BF</h2>
-    <p>Wir sind ein E-Sport-Verein aus Nordrhein-Westfalen mit Fokus auf Battlefield 6, digitaler Jugendarbeit, Medienkompetenz und Teamplay. Unser Ziel ist es, Gaming verantwortungsbewusst, fair und gemeinschaftlich zu fördern.</p>
+    <p>Wir sind ein E-Sport-Verein aus Nordrhein-Westfalen mit Schwerpunkt auf Battlefield 6, Jugendarbeit, digitaler Bildung und teamorientiertem Gaming.</p>
     <a class="button" href="#mitglied">Jetzt Mitglied werden</a>
   </section>
 
   <section id="ueber">
     <h2>Über uns</h2>
-    <p>Der Verein Deister-Schweizer BF verfolgt gemeinnützige Zwecke in den Bereichen Jugendhilfe, Bildung, Medienkompetenz und E-Sport. Wir schaffen eine sichere, moderne und soziale Gaming-Community für Spieler aller Erfahrungsstufen.</p>
-    <p>Unsere Werte: Fairness, Respekt, Teamgeist und Verantwortung.</p>
+    <p>Der Verein Deister-Schweizer BF verfolgt gemeinnützige Zwecke in Jugendhilfe, Medienkompetenz und E-Sport. Wir wollen Gaming sicher, modern und fair gestalten.</p>
   </section>
 
   <section id="mitglied">
     <h2>Mitglied werden</h2>
-    <h3>Mitgliedsarten</h3>
     <ul>
       <li><strong>Ordentliche Mitglieder</strong> – aktive Mitglieder mit Stimmrecht</li>
-      <li><strong>Fördermitglieder</strong> – stille Unterstützer ohne Pflichten und ohne Stimmrecht</li>
+      <li><strong>Fördermitglieder</strong> – Unterstützer ohne Stimmrecht und ohne Pflichten</li>
     </ul>
-    <p>Unser Verein besitzt eine moderne Struktur, die auch digitale Nutzung sowie Gaming-Ausrüstung umfasst.</p>
+    <p>Der Verein kann Equipment wie Headsets kaufen und Mitgliedern zur Nutzung überlassen – Eigentum bleibt beim Verein.</p>
     <a class="button" href="beitritt.pdf">Beitrittserklärung herunterladen</a>
   </section>
 
   <section id="teams">
-    <h2>Battlefield 6 – Unser E-Sport Team</h2>
-    <p>Wir trainieren regelmäßig Strategie, Aim, Teamplay und Match-Koordination. Weitere Teams und Spiele folgen mit wachsender Community.</p>
+    <h2>E-Sport Teams</h2>
+    <p>Unser Fokus liegt derzeit auf Battlefield 6 – wir trainieren Strategie, Teamplay und Kommunikation.</p>
   </section>
 
   <section id="downloads">
@@ -128,11 +151,11 @@
     <h2>Kontakt</h2>
     <p><strong>E-Mail:</strong> kontakt@deister-schweizer-bf.de</p>
     <p><strong>Discord:</strong> Link zum Server</p>
-    <p>Der Verein hat seinen Sitz in Nordrhein-Westfalen.</p>
   </section>
 
   <footer>
-    Deister-Schweizer BF e.V. (in Gründung) • Nordrhein-Westfalen
+    © 2025 Deister-Schweizer BF e.V. (in Gründung) – NRW
   </footer>
+
 </body>
 </html>
