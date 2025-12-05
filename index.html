@@ -23,13 +23,19 @@
       --dunkel: #222;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: var(--hell);
       color: var(--dunkel);
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     /* VIDEO-HEADER */
@@ -146,7 +152,9 @@
       background: var(--rot-dunkel);
     }
 
-    ul { padding-left: 18px; }
+    ul {
+      padding-left: 18px;
+    }
 
     footer {
       background: #333;
@@ -157,16 +165,51 @@
       font-size: 0.9rem;
     }
 
-    a { color: var(--rot); }
-    a:hover { color: var(--rot-dunkel); }
-
-    @media (max-width: 600px) {
-      .video-header { height: 220px; }
-      .header-content h1 { font-size: 1.5rem; }
-      .header-content img { width: 90px; }
+    a {
+      color: var(--rot);
     }
 
-    html { scroll-behavior: smooth; }
+    a:hover {
+      color: var(--rot-dunkel);
+    }
+
+    @media (max-width: 600px) {
+      .video-header {
+        height: 220px;
+      }
+      .header-content h1 {
+        font-size: 1.5rem;
+      }
+      .header-content img {
+        width: 90px;
+      }
+    }
+
+    /* TEAM / VORSTAND */
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .team-card {
+      background: var(--weiß);
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .team-card h3 {
+      margin-top: 0;
+      color: var(--rot);
+    }
+
+    .team-card p {
+      margin: 5px 0;
+    }
   </style>
 </head>
 
@@ -190,6 +233,7 @@
   <nav>
     <a href="#start">Start</a>
     <a href="#ueber">Über uns</a>
+    <a href="#vorstand">Vorstand &amp; Team</a>
     <a href="#mitglied">Mitglied werden</a>
     <a href="#teams">Teams</a>
     <a href="#downloads">Downloads</a>
@@ -201,7 +245,8 @@
       <h2>Willkommen beim Deister-Schweizer BF</h2>
       <p>
         Wir sind ein E-Sport-Verein aus Nordrhein-Westfalen mit Schwerpunkt auf Battlefield 6,
-        Jugendarbeit, digitaler Bildung und teamorientiertem Gaming.
+        Jugendarbeit, digitaler Bildung und teamorientiertem Gaming. Unser Ziel ist es, Gaming fair,
+        verantwortungsvoll und gemeinschaftlich zu gestalten.
       </p>
       <a class="button" href="#mitglied">Jetzt Mitglied werden</a>
     </section>
@@ -210,22 +255,53 @@
       <h2>Über uns</h2>
       <p>
         Der Verein <strong>Deister-Schweizer BF</strong> verfolgt gemeinnützige Zwecke in den Bereichen
-        Jugendhilfe, Medienkompetenz und E-Sport.
+        Jugendhilfe, Medienkompetenz und E-Sport. Wir verbinden Gaming mit sozialer Verantwortung,
+        Teamgeist und moderner Vereinsarbeit.
       </p>
       <p>
-        Unsere Werte: <strong>Fairness</strong>, <strong>Respekt</strong>, <strong>Teamgeist</strong>, <strong>Verantwortung</strong>.
+        Unsere Werte: <strong>Fairness</strong>, <strong>Respekt</strong>, <strong>Teamgeist</strong> und
+        <strong>Verantwortung</strong>.
       </p>
+    </section>
+
+    <!-- NEUER BEREICH: VORSTAND & GRÜNDUNGSTEAM -->
+    <section id="vorstand">
+      <h2>Vorstand &amp; Gründungsteam</h2>
+      <p>
+        Der Deister-Schweizer BF wird von engagierten Mitgliedern geführt, die sich für fairen E-Sport,
+        Jugendarbeit und eine starke Community einsetzen.
+      </p>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <h3>1. Vorsitzender</h3>
+          <p><strong>Dein Name</strong></p>
+          <p>Leitung des Vereins, strategische Planung und Repräsentation nach außen.</p>
+        </div>
+
+        <div class="team-card">
+          <h3>2. Vorsitzender</h3>
+          <p><strong>Dein Name</strong></p>
+          <p>Unterstützung des Vorstands, Organisation und Betreuung der Mitglieder.</p>
+        </div>
+
+        <div class="team-card">
+          <h3>Gründer des Vereins</h3>
+          <p><strong>Dein Name</strong></p>
+          <p>Initiator des Vereins und Ideengeber für die Vision des Deister-Schweizer BF.</p>
+        </div>
+      </div>
     </section>
 
     <section id="mitglied">
       <h2>Mitglied werden</h2>
       <ul>
         <li><strong>Ordentliche Mitglieder</strong> – aktive Mitglieder mit Stimmrecht.</li>
-        <li><strong>Fördermitglieder</strong> – Unterstützer ohne Stimmrecht.</li>
+        <li><strong>Fördermitglieder</strong> – stille Unterstützer ohne Stimmrecht und ohne aktive Pflichten.</li>
       </ul>
       <p>
         Der Verein kann Gaming-Equipment wie Headsets, Mäuse oder Controller anschaffen und Mitgliedern zur Nutzung
-        für Vereinsaktivitäten überlassen.
+        für Vereinsaktivitäten überlassen. Das Equipment bleibt Eigentum des Vereins.
       </p>
       <a class="button" href="beitritt.pdf">Beitrittserklärung herunterladen</a>
     </section>
@@ -233,12 +309,14 @@
     <section id="teams">
       <h2>E-Sport Teams</h2>
       <p>
-        Unser Fokus liegt aktuell auf <strong>Battlefield 6</strong>. Mit wachsender Community folgen weitere Spiele.
+        Unser Fokus liegt aktuell auf <strong>Battlefield 6</strong>. Wir arbeiten an Strategie, Teamplay,
+        Kommunikation und fairer Wettkampfstruktur. Mit wachsender Community sind weitere Teams und Spiele geplant.
       </p>
     </section>
 
     <section id="downloads">
       <h2>Downloads</h2>
+      <p>Hier findest du alle wichtigen Vereinsdokumente als PDF:</p>
       <ul>
         <li><a href="satzung.pdf">Satzung (PDF)</a></li>
         <li><a href="beitritt.pdf">Beitrittserklärung (PDF)</a></li>
@@ -250,7 +328,13 @@
     <section id="kontakt">
       <h2>Kontakt</h2>
       <p><strong>E-Mail:</strong> kontakt@deister-schweizer-bf.de</p>
-      <p><strong>Discord:</strong> folgt</p>
+      <p>
+        <strong>Discord:</strong>
+        <!-- TODO: Hier deinen echten Discord-Einladungslink eintragen -->
+        <a href="https://discord.gg/DEIN-EINLADUNGS-LINK" target="_blank" rel="noopener">
+          Discord-Server beitreten
+        </a>
+      </p>
       <p>Der Verein hat seinen Sitz in Nordrhein-Westfalen.</p>
     </section>
   </main>
