@@ -13,7 +13,6 @@
     gtag('js', new Date());
     gtag('config', 'G-YJMEZ0EW8V');
   </script>
-  <!-- Ende Google Analytics -->
 
   <style>
     :root {
@@ -24,9 +23,7 @@
       --dunkel: #222;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -40,7 +37,7 @@
     .video-header {
       position: relative;
       width: 100%;
-      height: 320px; /* Höhe des Video-Headers, kannst du anpassen */
+      height: 320px;
       overflow: hidden;
       background: #000;
     }
@@ -58,7 +55,7 @@
     .header-overlay {
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.35); /* Abdunkelung für bessere Lesbarkeit */
+      background: rgba(0, 0, 0, 0.35);
     }
 
     .header-content {
@@ -149,9 +146,7 @@
       background: var(--rot-dunkel);
     }
 
-    ul {
-      padding-left: 18px;
-    }
+    ul { padding-left: 18px; }
 
     footer {
       background: #333;
@@ -162,35 +157,25 @@
       font-size: 0.9rem;
     }
 
-    a {
-      color: var(--rot);
-    }
-
-    a:hover {
-      color: var(--rot-dunkel);
-    }
+    a { color: var(--rot); }
+    a:hover { color: var(--rot-dunkel); }
 
     @media (max-width: 600px) {
-      .video-header {
-        height: 220px;
-      }
-      .header-content h1 {
-        font-size: 1.5rem;
-      }
-      .header-content img {
-        width: 90px;
-      }
+      .video-header { height: 220px; }
+      .header-content h1 { font-size: 1.5rem; }
+      .header-content img { width: 90px; }
     }
+
+    html { scroll-behavior: smooth; }
   </style>
 </head>
 
 <body>
 
-  <!-- VIDEO-HEADER -->
+  <!-- VIDEO HEADER -->
   <header class="video-header">
     <video autoplay muted loop playsinline>
-      <!-- WICHTIG: Die Datei muss in GitHub genau "videowebseite.mp4" heißen -->
-      <source src="videowebseite.mp4" type="video/mp4">
+      <source src="https://cdn-cf-east.streamable.com/video/mp4/prnkzw.mp4?Expires=1765157298068&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=BQx6DKtwCjD1EoVgJYyG0x9X8l6Ns6Ni1crGKWaybaW41GHQP11j883W7aJB36AetFOAg5jmp~Lgshb~b3mRI4KAp6q4W3to4Kl91TFxjiayPr06JOPFUS-Pa50e9kvZ~eIPqX~NYFhT-Ec9lwUlY6cA1J2wyxGCWc2oPfB6tTmd-MsIiEar05jRRxkV5HPoVJ9ysPrBj2YpSs-CxTIBBSwne~vGFMyr~PCbKYIxb~DIJZrpygtCFo0Bhe3xpZaXfZ-V9lJb6Fx1lua5gL4weLl6AJTCn8VhIHyYvUMu55HGRooZtYxuslP~MLWYb8J1OLQcWadEVhXEuLKVPMwHNA__" type="video/mp4">
       Dein Browser unterstützt kein HTML5-Video.
     </video>
     <div class="header-overlay"></div>
@@ -216,8 +201,7 @@
       <h2>Willkommen beim Deister-Schweizer BF</h2>
       <p>
         Wir sind ein E-Sport-Verein aus Nordrhein-Westfalen mit Schwerpunkt auf Battlefield 6,
-        Jugendarbeit, digitaler Bildung und teamorientiertem Gaming. Unser Ziel ist es, Gaming fair,
-        verantwortungsvoll und gemeinschaftlich zu gestalten.
+        Jugendarbeit, digitaler Bildung und teamorientiertem Gaming.
       </p>
       <a class="button" href="#mitglied">Jetzt Mitglied werden</a>
     </section>
@@ -226,12 +210,10 @@
       <h2>Über uns</h2>
       <p>
         Der Verein <strong>Deister-Schweizer BF</strong> verfolgt gemeinnützige Zwecke in den Bereichen
-        Jugendhilfe, Medienkompetenz und E-Sport. Wir verbinden Gaming mit sozialer Verantwortung,
-        Teamgeist und moderner Vereinsarbeit.
+        Jugendhilfe, Medienkompetenz und E-Sport.
       </p>
       <p>
-        Unsere Werte: <strong>Fairness</strong>, <strong>Respekt</strong>, <strong>Teamgeist</strong> und
-        <strong>Verantwortung</strong>.
+        Unsere Werte: <strong>Fairness</strong>, <strong>Respekt</strong>, <strong>Teamgeist</strong>, <strong>Verantwortung</strong>.
       </p>
     </section>
 
@@ -239,11 +221,11 @@
       <h2>Mitglied werden</h2>
       <ul>
         <li><strong>Ordentliche Mitglieder</strong> – aktive Mitglieder mit Stimmrecht.</li>
-        <li><strong>Fördermitglieder</strong> – stille Unterstützer ohne Stimmrecht und ohne aktive Pflichten.</li>
+        <li><strong>Fördermitglieder</strong> – Unterstützer ohne Stimmrecht.</li>
       </ul>
       <p>
         Der Verein kann Gaming-Equipment wie Headsets, Mäuse oder Controller anschaffen und Mitgliedern zur Nutzung
-        für Vereinsaktivitäten überlassen. Das Equipment bleibt Eigentum des Vereins.
+        für Vereinsaktivitäten überlassen.
       </p>
       <a class="button" href="beitritt.pdf">Beitrittserklärung herunterladen</a>
     </section>
@@ -251,14 +233,12 @@
     <section id="teams">
       <h2>E-Sport Teams</h2>
       <p>
-        Unser Fokus liegt aktuell auf <strong>Battlefield 6</strong>. Wir arbeiten an Strategie, Teamplay,
-        Kommunikation und fairer Wettkampfstruktur. Mit wachsender Community sind weitere Teams und Spiele geplant.
+        Unser Fokus liegt aktuell auf <strong>Battlefield 6</strong>. Mit wachsender Community folgen weitere Spiele.
       </p>
     </section>
 
     <section id="downloads">
       <h2>Downloads</h2>
-      <p>Hier findest du alle wichtigen Vereinsdokumente als PDF:</p>
       <ul>
         <li><a href="satzung.pdf">Satzung (PDF)</a></li>
         <li><a href="beitritt.pdf">Beitrittserklärung (PDF)</a></li>
@@ -269,7 +249,7 @@
 
     <section id="kontakt">
       <h2>Kontakt</h2>
-      <p><strong>E-Mail:</strong> kontakt@deister-schweizer-bf.de (Platzhalter, bitte anpassen)</p>
+      <p><strong>E-Mail:</strong> kontakt@deister-schweizer-bf.de</p>
       <p><strong>Discord:</strong> folgt</p>
       <p>Der Verein hat seinen Sitz in Nordrhein-Westfalen.</p>
     </section>
