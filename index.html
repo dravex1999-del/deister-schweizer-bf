@@ -162,6 +162,11 @@
       font-size: 0.9rem;
     }
 
+    footer a {
+      color: var(--weiß);
+      text-decoration: underline;
+    }
+
     a {
       color: var(--rot);
     }
@@ -194,6 +199,18 @@
     .team-card p {
       margin: 5px 0;
     }
+
+    @media (max-width: 600px) {
+      .video-header {
+        height: 220px;
+      }
+      .header-content h1 {
+        font-size: 1.5rem;
+      }
+      .header-content img {
+        width: 90px;
+      }
+    }
   </style>
 </head>
 
@@ -222,6 +239,7 @@
     <a href="#teams">Teams</a>
     <a href="#downloads">Downloads</a>
     <a href="#kontakt">Kontakt</a>
+    <a href="#impressum">Impressum</a>
   </nav>
 
   <main>
@@ -314,10 +332,49 @@
       <p>Der Verein hat seinen Sitz in Nordrhein-Westfalen.</p>
     </section>
 
+    <!-- IMPRESSUM -->
+    <section id="impressum">
+      <h2>Impressum</h2>
+      <p><strong>Angaben gemäß § 5 TMG</strong></p>
+
+      <p>
+        Deister-Schweizer BF e.V. (in Gründung)<br>
+        <!-- TODO: echte Anschrift eintragen -->
+        Musterstraße 1<br>
+        12345 Musterstadt<br>
+        Nordrhein-Westfalen
+      </p>
+
+      <p>
+        Vertreten durch:<br>
+        1. Vorsitzender: Max Mustermann<br>
+        2. Vorsitzender: Maxine Musterfrau
+      </p>
+
+      <p>
+        Kontakt:<br>
+        Telefon: 01234 / 567890<br>
+        E-Mail: kontakt@deister-schweizer-bf.de
+      </p>
+
+      <p>
+        Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:<br>
+        Max Mustermann<br>
+        Anschrift wie oben.
+      </p>
+
+      <p style="font-size:0.9rem; opacity:0.8;">
+        Hinweis: Bitte ersetze die Platzhalter (Name, Anschrift, Telefonnummer) durch deine echten Daten.
+        Dies ist keine Rechtsberatung – im Zweifel wende dich an eine Rechtsberatung oder einen Fachanwalt.
+      </p>
+    </section>
+
   </main>
 
   <footer>
     © 2025 Deister-Schweizer BF e.V. (in Gründung) – Nordrhein-Westfalen
+    &nbsp;|&nbsp;
+    <a href="#impressum">Impressum</a>
   </footer>
 
 </body>
