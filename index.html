@@ -39,7 +39,6 @@
     }
 
     /* VIDEO-HEADER */
-
     .video-header {
       position: relative;
       width: 100%;
@@ -94,7 +93,6 @@
     }
 
     /* NAVIGATION */
-
     nav {
       background: #333;
       padding: 10px;
@@ -115,8 +113,7 @@
       text-decoration: underline;
     }
 
-    /* SEITENBEREICHE */
-
+    /* HAUPTBEREICHE */
     main {
       max-width: 1100px;
       margin: 25px auto 40px;
@@ -173,20 +170,7 @@
       color: var(--rot-dunkel);
     }
 
-    @media (max-width: 600px) {
-      .video-header {
-        height: 220px;
-      }
-      .header-content h1 {
-        font-size: 1.5rem;
-      }
-      .header-content img {
-        width: 90px;
-      }
-    }
-
     /* TEAM / VORSTAND */
-
     .team-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -241,12 +225,12 @@
   </nav>
 
   <main>
+
     <section id="start">
       <h2>Willkommen beim Deister-Schweizer BF</h2>
       <p>
         Wir sind ein E-Sport-Verein aus Nordrhein-Westfalen mit Schwerpunkt auf Battlefield 6,
-        Jugendarbeit, digitaler Bildung und teamorientiertem Gaming. Unser Ziel ist es, Gaming fair,
-        verantwortungsvoll und gemeinschaftlich zu gestalten.
+        Jugendarbeit, digitaler Bildung und teamorientiertem Gaming.
       </p>
       <a class="button" href="#mitglied">Jetzt Mitglied werden</a>
     </section>
@@ -258,37 +242,33 @@
         Jugendhilfe, Medienkompetenz und E-Sport. Wir verbinden Gaming mit sozialer Verantwortung,
         Teamgeist und moderner Vereinsarbeit.
       </p>
-      <p>
-        Unsere Werte: <strong>Fairness</strong>, <strong>Respekt</strong>, <strong>Teamgeist</strong> und
-        <strong>Verantwortung</strong>.
-      </p>
     </section>
 
-    <!-- NEUER BEREICH: VORSTAND & GRÜNDUNGSTEAM -->
+    <!-- VORSTANDSBEREICH -->
     <section id="vorstand">
       <h2>Vorstand &amp; Gründungsteam</h2>
       <p>
-        Der Deister-Schweizer BF wird von engagierten Mitgliedern geführt, die sich für fairen E-Sport,
-        Jugendarbeit und eine starke Community einsetzen.
+        Der Verein wird von engagierten Mitgliedern geführt, die sich für fairen E-Sport
+        und eine starke Community einsetzen.
       </p>
 
       <div class="team-grid">
         <div class="team-card">
           <h3>1. Vorsitzender</h3>
           <p><strong>Dein Name</strong></p>
-          <p>Leitung des Vereins, strategische Planung und Repräsentation nach außen.</p>
+          <p>Leitung des Vereins, strategische Planung und Repräsentation.</p>
         </div>
 
         <div class="team-card">
           <h3>2. Vorsitzender</h3>
           <p><strong>Dein Name</strong></p>
-          <p>Unterstützung des Vorstands, Organisation und Betreuung der Mitglieder.</p>
+          <p>Unterstützung des Vorstandes und Mitgliederbetreuung.</p>
         </div>
 
         <div class="team-card">
           <h3>Gründer des Vereins</h3>
           <p><strong>Dein Name</strong></p>
-          <p>Initiator des Vereins und Ideengeber für die Vision des Deister-Schweizer BF.</p>
+          <p>Initiator des Projekts und Visionsträger der Community.</p>
         </div>
       </div>
     </section>
@@ -296,27 +276,22 @@
     <section id="mitglied">
       <h2>Mitglied werden</h2>
       <ul>
-        <li><strong>Ordentliche Mitglieder</strong> – aktive Mitglieder mit Stimmrecht.</li>
-        <li><strong>Fördermitglieder</strong> – stille Unterstützer ohne Stimmrecht und ohne aktive Pflichten.</li>
+        <li><strong>Ordentliche Mitglieder:</strong> aktive Mitglieder mit Stimmrecht.</li>
+        <li><strong>Fördermitglieder:</strong> Unterstützer ohne Verpflichtungen.</li>
       </ul>
-      <p>
-        Der Verein kann Gaming-Equipment wie Headsets, Mäuse oder Controller anschaffen und Mitgliedern zur Nutzung
-        für Vereinsaktivitäten überlassen. Das Equipment bleibt Eigentum des Vereins.
-      </p>
       <a class="button" href="beitritt.pdf">Beitrittserklärung herunterladen</a>
     </section>
 
     <section id="teams">
       <h2>E-Sport Teams</h2>
       <p>
-        Unser Fokus liegt aktuell auf <strong>Battlefield 6</strong>. Wir arbeiten an Strategie, Teamplay,
-        Kommunikation und fairer Wettkampfstruktur. Mit wachsender Community sind weitere Teams und Spiele geplant.
+        Aktueller Fokus: <strong>Battlefield 6</strong>.  
+        Mit steigender Community sind weitere Teams geplant.
       </p>
     </section>
 
     <section id="downloads">
       <h2>Downloads</h2>
-      <p>Hier findest du alle wichtigen Vereinsdokumente als PDF:</p>
       <ul>
         <li><a href="satzung.pdf">Satzung (PDF)</a></li>
         <li><a href="beitritt.pdf">Beitrittserklärung (PDF)</a></li>
@@ -328,15 +303,17 @@
     <section id="kontakt">
       <h2>Kontakt</h2>
       <p><strong>E-Mail:</strong> kontakt@deister-schweizer-bf.de</p>
+
       <p>
         <strong>Discord:</strong>
-        <!-- TODO: Hier deinen echten Discord-Einladungslink eintragen -->
-        <a href="https://discord.gg/DEIN-EINLADUNGS-LINK" target="_blank" rel="noopener">
+        <a href="https://discord.gg/CjmtPq4BHg" target="_blank" rel="noopener">
           Discord-Server beitreten
         </a>
       </p>
+
       <p>Der Verein hat seinen Sitz in Nordrhein-Westfalen.</p>
     </section>
+
   </main>
 
   <footer>
