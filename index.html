@@ -5,15 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Deister-Schweizer BF – E-Sport Verein NRW</title>
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJMEZ0EW8V"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-YJMEZ0EW8V');
-  </script>
-
   <style>
     :root {
       --rot: #b71c1c;
@@ -23,9 +14,7 @@
       --dunkel: #222;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -34,9 +23,7 @@
       color: var(--dunkel);
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     /* VIDEO-HEADER */
     .video-header {
@@ -75,21 +62,9 @@
 
     .header-content img {
       width: 120px;
-      height: auto;
       border-radius: 10px;
       display: block;
       margin: 0 auto 10px;
-    }
-
-    .header-content h1 {
-      margin: 5px 0;
-      font-size: 2rem;
-    }
-
-    .header-content p {
-      margin: 0;
-      font-size: 1rem;
-      opacity: 0.9;
     }
 
     /* NAVIGATION */
@@ -106,14 +81,11 @@
       color: var(--weiß);
       text-decoration: none;
       font-weight: bold;
-      font-size: 0.95rem;
     }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+    nav a:hover { text-decoration: underline; }
 
-    /* HAUPTBEREICHE */
+    /* CONTENT */
     main {
       max-width: 1100px;
       margin: 25px auto 40px;
@@ -131,51 +103,22 @@
     h2 {
       color: var(--rot);
       margin-top: 0;
-      margin-bottom: 10px;
     }
 
     .button {
-      display: inline-block;
       background: var(--rot);
       color: var(--weiß);
       padding: 10px 18px;
       border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
+      display: inline-block;
       margin-top: 10px;
     }
 
-    .button:hover {
-      background: var(--rot-dunkel);
-    }
+    .button:hover { background: var(--rot-dunkel); }
 
-    ul {
-      padding-left: 18px;
-    }
-
-    footer {
-      background: #333;
-      color: var(--weiß);
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-      font-size: 0.9rem;
-    }
-
-    footer a {
-      color: var(--weiß);
-      text-decoration: underline;
-    }
-
-    a {
-      color: var(--rot);
-    }
-
-    a:hover {
-      color: var(--rot-dunkel);
-    }
-
-    /* TEAM / VORSTAND */
+    /* TEAM */
     .team-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -191,25 +134,19 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
-    .team-card h3 {
-      margin-top: 0;
-      color: var(--rot);
+    /* FOOTER */
+    footer {
+      background: #333;
+      color: var(--weiß);
+      padding: 15px;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
     }
 
-    .team-card p {
-      margin: 5px 0;
-    }
-
-    @media (max-width: 600px) {
-      .video-header {
-        height: 220px;
-      }
-      .header-content h1 {
-        font-size: 1.5rem;
-      }
-      .header-content img {
-        width: 90px;
-      }
+    footer a {
+      color: var(--weiß);
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -219,12 +156,12 @@
   <!-- VIDEO HEADER -->
   <header class="video-header">
     <video autoplay muted loop playsinline>
-      <source src="https://cdn-cf-east.streamable.com/video/mp4/prnkzw.mp4?Expires=1765157298068&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=BQx6DKtwCjD1EoVgJYyG0x9X8l6Ns6Ni1crGKWaybaW41GHQP11j883W7aJB36AetFOAg5jmp~Lgshb~b3mRI4KAp6q4W3to4Kl91TFxjiayPr06JOPFUS-Pa50e9kvZ~eIPqX~NYFhT-Ec9lwUlY6cA1J2wyxGCWc2oPfB6tTmd-MsIiEar05jRRxkV5HPoVJ9ysPrBj2YpSs-CxTIBBSwne~vGFMyr~PCbKYIxb~DIJZrpygtCFo0Bhe3xpZaXfZ-V9lJb6Fx1lua5gL4weLl6AJTCn8VhIHyYvUMu55HGRooZtYxuslP~MLWYb8J1OLQcWadEVhXEuLKVPMwHNA__" type="video/mp4">
-      Dein Browser unterstützt kein HTML5-Video.
+      <source src="videowebseite.mp4" type="video/mp4">
     </video>
     <div class="header-overlay"></div>
+
     <div class="header-content">
-      <img src="logo.png" alt="Vereinslogo" />
+      <img src="logo.png" alt="Vereinslogo">
       <h1>Deister-Schweizer BF</h1>
       <p>E-Sport &amp; Gaming Verein NRW</p>
     </div>
@@ -234,147 +171,87 @@
   <nav>
     <a href="#start">Start</a>
     <a href="#ueber">Über uns</a>
-    <a href="#vorstand">Vorstand &amp; Team</a>
+    <a href="#vorstand">Vorstand</a>
     <a href="#mitglied">Mitglied werden</a>
     <a href="#teams">Teams</a>
     <a href="#downloads">Downloads</a>
     <a href="#kontakt">Kontakt</a>
-    <a href="#impressum">Impressum</a>
+    <a href="impressum.html">Impressum</a>
   </nav>
 
   <main>
 
+    <!-- START -->
     <section id="start">
       <h2>Willkommen beim Deister-Schweizer BF</h2>
-      <p>
-        Wir sind ein E-Sport-Verein aus Nordrhein-Westfalen mit Schwerpunkt auf Battlefield 6,
-        Jugendarbeit, digitaler Bildung und teamorientiertem Gaming.
-      </p>
+      <p>Wir sind ein E-Sport-Verein aus NRW mit Fokus auf Battlefield 6 und Jugendarbeit.</p>
       <a class="button" href="#mitglied">Jetzt Mitglied werden</a>
     </section>
 
+    <!-- ÜBER UNS -->
     <section id="ueber">
       <h2>Über uns</h2>
-      <p>
-        Der Verein <strong>Deister-Schweizer BF</strong> verfolgt gemeinnützige Zwecke in den Bereichen
-        Jugendhilfe, Medienkompetenz und E-Sport. Wir verbinden Gaming mit sozialer Verantwortung,
-        Teamgeist und moderner Vereinsarbeit.
-      </p>
+      <p>Der Verein verbindet Gaming mit sozialer Verantwortung, Teamgeist und Medienkompetenz.</p>
     </section>
 
-    <!-- VORSTANDSBEREICH -->
+    <!-- VORSTAND -->
     <section id="vorstand">
-      <h2>Vorstand &amp; Gründungsteam</h2>
-      <p>
-        Der Verein wird von engagierten Mitgliedern geführt, die sich für fairen E-Sport
-        und eine starke Community einsetzen.
-      </p>
+      <h2>Vorstand & Gründungsteam</h2>
 
       <div class="team-grid">
         <div class="team-card">
           <h3>1. Vorsitzender</h3>
           <p><strong>Dein Name</strong></p>
-          <p>Leitung des Vereins, strategische Planung und Repräsentation.</p>
         </div>
 
         <div class="team-card">
           <h3>2. Vorsitzender</h3>
           <p><strong>Dein Name</strong></p>
-          <p>Unterstützung des Vorstandes und Mitgliederbetreuung.</p>
         </div>
 
         <div class="team-card">
-          <h3>Gründer des Vereins</h3>
+          <h3>Gründer</h3>
           <p><strong>Dein Name</strong></p>
-          <p>Initiator des Projekts und Visionsträger der Community.</p>
         </div>
       </div>
     </section>
 
+    <!-- MITGLIED -->
     <section id="mitglied">
       <h2>Mitglied werden</h2>
-      <ul>
-        <li><strong>Ordentliche Mitglieder:</strong> aktive Mitglieder mit Stimmrecht.</li>
-        <li><strong>Fördermitglieder:</strong> Unterstützer ohne Verpflichtungen.</li>
-      </ul>
       <a class="button" href="beitritt.pdf">Beitrittserklärung herunterladen</a>
     </section>
 
+    <!-- TEAMS -->
     <section id="teams">
       <h2>E-Sport Teams</h2>
-      <p>
-        Aktueller Fokus: <strong>Battlefield 6</strong>.  
-        Mit steigender Community sind weitere Teams geplant.
-      </p>
+      <p>Aktueller Schwerpunkt: Battlefield 6.</p>
     </section>
 
+    <!-- DOWNLOADS -->
     <section id="downloads">
       <h2>Downloads</h2>
       <ul>
-        <li><a href="satzung.pdf">Satzung (PDF)</a></li>
-        <li><a href="beitritt.pdf">Beitrittserklärung (PDF)</a></li>
-        <li><a href="beitragsordnung.pdf">Beitragsordnung (PDF)</a></li>
-        <li><a href="geschaeftsordnung.pdf">Geschäftsordnung (PDF)</a></li>
+        <li><a href="satzung.pdf">Satzung</a></li>
+        <li><a href="beitritt.pdf">Beitrittserklärung</a></li>
+        <li><a href="beitragsordnung.pdf">Beitragsordnung</a></li>
+        <li><a href="geschaeftsordnung.pdf">Geschäftsordnung</a></li>
       </ul>
     </section>
 
+    <!-- KONTAKT -->
     <section id="kontakt">
       <h2>Kontakt</h2>
       <p><strong>E-Mail:</strong> kontakt@deister-schweizer-bf.de</p>
-
-      <p>
-        <strong>Discord:</strong>
-        <a href="https://discord.gg/CjmtPq4BHg" target="_blank" rel="noopener">
-          Discord-Server beitreten
-        </a>
-      </p>
-
-      <p>Der Verein hat seinen Sitz in Nordrhein-Westfalen.</p>
-    </section>
-
-    <!-- IMPRESSUM -->
-    <section id="impressum">
-      <h2>Impressum</h2>
-      <p><strong>Angaben gemäß § 5 TMG</strong></p>
-
-      <p>
-        Deister-Schweizer BF e.V. (in Gründung)<br>
-        <!-- TODO: echte Anschrift eintragen -->
-        Musterstraße 1<br>
-        12345 Musterstadt<br>
-        Nordrhein-Westfalen
-      </p>
-
-      <p>
-        Vertreten durch:<br>
-        1. Vorsitzender: Max Mustermann<br>
-        2. Vorsitzender: Maxine Musterfrau
-      </p>
-
-      <p>
-        Kontakt:<br>
-        Telefon: 01234 / 567890<br>
-        E-Mail: kontakt@deister-schweizer-bf.de
-      </p>
-
-      <p>
-        Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:<br>
-        Max Mustermann<br>
-        Anschrift wie oben.
-      </p>
-
-      <p style="font-size:0.9rem; opacity:0.8;">
-        Hinweis: Bitte ersetze die Platzhalter (Name, Anschrift, Telefonnummer) durch deine echten Daten.
-        Dies ist keine Rechtsberatung – im Zweifel wende dich an eine Rechtsberatung oder einen Fachanwalt.
-      </p>
+      <p><strong>Discord:</strong> <a href="https://discord.gg/CjmtPq4BHg">Discord-Server beitreten</a></p>
     </section>
 
   </main>
 
   <footer>
-    © 2025 Deister-Schweizer BF e.V. (in Gründung) – Nordrhein-Westfalen
+    © 2025 Deister-Schweizer BF e.V. (in Gründung)
     &nbsp;|&nbsp;
-    <a href="#impressum">Impressum</a>
+    <a href="impressum.html">Impressum</a>
   </footer>
 
 </body>
